@@ -61,7 +61,7 @@ O gráfico linear (à esquerda) exibe uma assimetria extrema à direita, demonst
 
 ## Subgrafo Pequeno
 
-O dataset original possui milhares de nós, o que gera um grave problema de poluição visual (*hairball*) se plotado integralmente. Para contornar isso e extrair valor analítico, a imagem `grapho.png` foca exclusivamente na vizinhança de um único nó central, a "Ego Network do nó 3943". Sobre a importância desta etapa, o autor destaca:
+O dataset original possui milhares de nós, o que gera um grave problema de poluição visual (*hairball*) se plotado integralmente. Para contornar isso e extrair valor analítico, a imagem abaixo que contém o subgrafo, foca, exclusivamente, na vizinhança de um único nó central, a "Ego Network do nó 3943". Sobre a importância desta etapa, o autor destaca:
 
 > "Um primeiro passo na análise da estrutura de uma rede é muitas vezes fazer uma imagem dela. [...] A visualização pode ser uma ferramenta extraordinariamente útil na análise de dados de redes, permitindo ver instantaneamente características estruturais importantes que, de outra forma, seriam difíceis de extrair dos dados brutos." (NEWMAN, 2018, tradução nossa).
 
@@ -71,7 +71,7 @@ Ao isolar o "ego" (em vermelho) e seus contatos diretos (em azul claro), obtemos
 
 ## Observações
 
-A análise visual do `grapho.png` comprova empiricamente a presença de alta coesão estrutural e transitividade. Nota-se que os vizinhos do nó 3943 estão intensamente conectados entre si, formando dezenas de triângulos de amizade fechados. Esse é um fenômeno clássico em redes sociais do mundo real, governado pelo **coeficiente de aglomeração** (*clustering coefficient*), que Newman descreve perfeitamente:
+A análise visual do subgrafo comprova, empiricamente, a presença de alta coesão estrutural e transitividade. Nota-se que os vizinhos do nó 3943 estão conectados entre si, formando dezenas de triângulos de amizade fechados. Esse é um fenômeno clássico em redes sociais do mundo real, governado pelo **coeficiente de aglomeração** (*clustering coefficient*), que Newman descreve perfeitamente:
 
 > "Em muitas redes, particularmente nas redes sociais, o fato de $u$ conhecer $v$ e $v$ conhecer $w$ não garante que $u$ conheça $w$, mas torna isso muito mais provável. O amigo do meu amigo não é necessariamente meu amigo, mas é muito mais provável que seja meu amigo do que um membro da população escolhido aleatoriamente." (NEWMAN, 2018, tradução nossa).
 
